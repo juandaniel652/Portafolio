@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio personal de Juan Dominguez: desarrollador web y de aplicaciones con experiencia en Python, JavaScript y más.">
+  <meta name="author" content="Juan Dominguez">
+  <title>Portafolio Juan Dominguez</title>
+
+  <!-- Fuentes y Iconos -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="img/logo_portafolio.png">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="scroll-animate">
+    <nav class="navbar container">
+      <h1 class="logo">Juan Dominguez</h1>
+
+      <!-- Menú hamburguesa -->
+      <span class="menu-toggle"><i class="fas fa-bars"></i></span>
+
+      <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="section about scroll-animate">
+      <div class="container about-container">
+        <div class="about-text scroll-animate">
+          <h2>¡Bienvenido!</h2>
+          <p>Soy un desarrollador apasionado por crear soluciones prácticas, eficientes y elegantes. Me encanta construir proyectos útiles y trabajar en equipo.</p>
+          <div class="social-icons scroll-animate">
+            <a href="https://github.com/juandaniel652" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/juan-daniel-dominguez-mentasti-26302a2a1/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="about-photo scroll-animate">
+          <img src="img/Imagen Juan Dominguez.png" alt="Foto de Juan Dominguez">
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="section projects scroll-animate">
+      <div class="container">
+        <h2 class="scroll-animate">Mis Proyectos</h2>
+        <div class="proyectos-grid">
+          <!-- Proyecto Asignaciones -->
+          <article class="proyecto scroll-animate">
+            <div class="slider" data-id="asignaciones">
+              <img src="img/asignaciones/ventana1.png" class="slide active" alt="Asignaciones - Ventana 1">
+              <img src="img/asignaciones/ventana2_general.png" class="slide" alt="Asignaciones - Ventana 2">
+              <button class="prev" aria-label="Anterior">&#10094;</button>
+              <button class="next" aria-label="Siguiente">&#10095;</button>
+            </div>
+            <h3 class="titulo-proyecto">Asignaciones <img src="img/asignaciones/cuaderno.ico" alt="Logo Asignaciones" class="logo-proyecto"></h3>
+            <p>Aplicación de escritorio que maneja, ordena y convierte asignaciones a distintos formatos.</p>
+          </article>
+
+          <!-- Proyecto Territorios -->
+          <article class="proyecto scroll-animate">
+            <div class="slider" data-id="territorios">
+              <img src="img/territorios/ventana1.png" class="slide active" alt="Territorios - Ventana 1">
+              <img src="img/territorios/ventana2.png" class="slide" alt="Territorios - Ventana 2">
+              <img src="img/territorios/ventana3.png" class="slide" alt="Territorios - Ventana 3">
+              <img src="img/territorios/ventana4.png" class="slide" alt="Territorios - Ventana 4">
+              <button class="prev" aria-label="Anterior">&#10094;</button>
+              <button class="next" aria-label="Siguiente">&#10095;</button>
+            </div>
+            <h3 class="titulo-proyecto">Territorios <img src="img/territorios/planilla_territorios.jpg" alt="Logo Territorios" class="logo-proyecto"></h3>
+            <p>Aplicación de escritorio para registro semanal y almacenamiento en planillas.</p>
+          </article>
+
+          <!-- Proyecto Ventas -->
+          <article class="proyecto scroll-animate">
+            <div class="slider" data-id="ventas">
+              <img src="img/ventas/pantalla_principal.png" class="slide active" alt="Ventas - Pantalla principal">
+              <img src="img/ventas/editar_producto.png" class="slide" alt="Ventas - Editar producto">
+              <img src="img/ventas/mensaje_gurdado.png" class="slide" alt="Ventas - Mensaje guardado">
+              <img src="img/ventas/recaudacion_mes.png" class="slide" alt="Ventas - Recaudación mensual">
+              <img src="img/ventas/recaudacion_dias.png" class="slide" alt="Ventas - Recaudación diaria">
+              <img src="img/ventas/recaudacion_productos.png" class="slide" alt="Ventas - Recaudación por productos">
+              <img src="img/ventas/recaudacion_total.png" class="slide" alt="Ventas - Recaudación total">
+              <button class="prev" aria-label="Anterior">&#10094;</button>
+              <button class="next" aria-label="Siguiente">&#10095;</button>
+            </div>
+            <h3 class="titulo-proyecto">Ventas <img src="img/ventas/logo.png" alt="Logo Ventas" class="logo-proyecto"></h3>
+            <p>Aplicación Android para gestión de productos y ganancias.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills scroll-animate">
+      <div class="container">
+        <h2 class="scroll-animate">Habilidades Técnicas</h2>
+        <ul class="skills-list scroll-animate">
+          <li>HTML, CSS, JavaScript</li>
+          <li>Python, Django, Flask, Kivy, KivyMD</li>
+          <li>React, Node.js</li>
+          <li>SQL, PostgreSQL, MongoDB</li>
+          <li>Git, GitHub</li>
+        </ul>
+
+        <h2 class="scroll-animate">Habilidades Blandas</h2>
+        <ul class="skills-list scroll-animate">
+          <li>Trabajo en equipo</li>
+          <li>Comunicación</li>
+          <li>Resolución de problemas</li>
+          <li>Adaptabilidad</li>
+          <li>Gestión del tiempo</li>
+          <li>Proactividad</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section contact scroll-animate">
+      <div class="container">
+        <h2 class="scroll-animate">Contacto</h2>
+        <p>Escríbeme a: 
+          <a class="email-link" href="mailto:dominguezmentastijuandaniel@gmail.com">
+            dominguezmentastijuandaniel@gmail.com
+          </a>
+        </p>
+        <a class="email-button scroll-animate" href="mailto:dominguezmentastijuandaniel@gmail.com">
+          <i class="fas fa-envelope"></i> Enviar mensaje
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer scroll-animate">
+    <div class="container">
+      <p>&copy; 2025 Juan Dominguez. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="slider.js"></script>
+  <script src="scroll-animate.js"></script>
+
+  <!-- Menú toggle JS -->
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+1. Botones de tipo 'slider' que al haber proyectos de múltiples pestañas permita ver cada una ✔
+2. Profesionalidad: titulo, frases y habilidades no tan 'IA', más para lo real ✔
+3. A los subtemas con el nombre de los proyectos ponerle un icono, el de la aplicación. 
+Ejemplo: Asignaciones (Logo) ✔
+4. FMejorar fuente de las letras del portafolio (titulo, subtitulo, parrafo)
