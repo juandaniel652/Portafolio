@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="../img/logo_portafolio.png">
+
+  <!-- Preload imagen principal -->
+  <link rel="preload" as="image" href="../img/imagen_juan.avif">
 </head>
 <body>
   <!-- HEADER -->
@@ -46,7 +49,13 @@
           </div>
         </div>
         <div class="about-photo scroll-animate">
-          <img src="../img/imagen_juan.avif" alt="Foto de Juan Dominguez"  loading="lazy">
+          <img 
+            src="../img/imagen_juan.avif" 
+            alt="Foto de Juan Dominguez"  
+            loading="lazy" 
+            width="400"
+            height="400"
+          >
         </div>
       </div>
     </section>
@@ -59,8 +68,20 @@
           <!-- Proyecto Asignaciones -->
           <article class="proyecto scroll-animate">
             <div class="slider" data-id="asignaciones">
-              <img src="../img/asignaciones/ventana1.avif" class="slide active" alt="Asignaciones - Ventana 1"  loading="lazy">
-              <img src="../img/asignaciones/ventana2_general.avif" class="slide" alt="Asignaciones - Ventana 2"  loading="lazy">
+              <img 
+                src="../img/asignaciones/ventana1.avif" 
+                srcset="../img/asignaciones/ventana1_small.avif 480w, ../img/asignaciones/ventana1.avif 1200w"
+                sizes="(max-width: 600px) 480px, 1200px"
+                class="slide active" 
+                alt="Asignaciones - Ventana 1"  
+                loading="lazy">
+              <img 
+                src="../img/asignaciones/ventana2_general.avif"
+                srcset="../img/asignaciones/ventana2_general_small.avif 480w, ../img/asignaciones/ventana2_general.avif 1200w"
+                sizes="(max-width: 600px) 480px, 1200px"
+                class="slide" 
+                alt="Asignaciones - Ventana 2"  
+                loading="lazy">
               <button class="prev" aria-label="Anterior">&#10094;</button>
               <button class="next" aria-label="Siguiente">&#10095;</button>
             </div>
@@ -140,7 +161,6 @@
         </a>
       </div>
     </section>
-
   </main>
 
   <!-- FOOTER -->

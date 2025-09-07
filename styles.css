@@ -395,17 +395,23 @@ footer {
   transition: all 0.8s ease-out;
 }
 
-/* ANIMACIONES POR SCROLL */
 .scroll-animate {
   opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease-out;
+  transform: translateY(20px);
+  transition: opacity .6s ease, transform .6s ease;
 }
 
 .scroll-animate.visible {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* NUEVO: mostrar el primer bloque inmediatamente */
+.scroll-animate:first-of-type {
+  opacity: 1;
+  transform: none;
+}
+
 
 /* ==============================
    RESPONSIVE AVANZADO
